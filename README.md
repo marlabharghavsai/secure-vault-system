@@ -176,6 +176,8 @@ curl -X POST http://localhost:8545 \
 ## Security Considerations
 - Replay protection using nonces
 - Signature verification using ecrecover
+- Strict input validation
+- ETH transfer success validation
 
 ## Repository Link
 ``` https://github.com/marlabharghavsai/secure-vault-system ```
