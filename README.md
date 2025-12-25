@@ -179,7 +179,3 @@ curl -X POST http://localhost:8545 \
 
 ## Repository Link
 ``` https://github.com/marlabharghavsai/secure-vault-system ```
-
-Strict input validation
-
-ETH transfer success validation
