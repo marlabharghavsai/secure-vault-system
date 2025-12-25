@@ -179,5 +179,19 @@ curl -X POST http://localhost:8545 \
 - Strict input validation
 - ETH transfer success validation
 
+## 🔁 Replay Protection
+
+- Replay attacks are prevented using a nonce and authorization ID.
+- Each authorization can only be used once.
+- The AuthorizationManager tracks used authorizations and rejects any reused nonce or authId,
+ensuring signatures cannot be replayed.
+
+## Assumptions & Known Limitations
+
+- Authorization signatures are generated off-chain by a trusted signer.
+- Private keys used in the local Hardhat network are publicly known and must never be used on mainnet.
+- This system is intended for demonstration and local validation only.
+- No gas optimization or production hardening has been applied.
+
 ## Repository Link
 ``` https://github.com/marlabharghavsai/secure-vault-system ```
